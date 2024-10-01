@@ -12,11 +12,8 @@ dependencies:
     specifier: ^18.3.1
     version: 18.3.1(react@18.3.1)
   storykit:
-    specifier: github:Linh-Tran-0312/storykit
-    version: github.com/Linh-Tran-0312/storykit/34f0f364bb83930b454f1f71c23296e2181377ae
-  style-inject:
-    specifier: ^0.3.0
-    version: 0.3.0
+    specifier: github:Linh-Tran-0312/storykit#aab7cca104a562c970a312ed5c7082eed27cfd5e
+    version: github.com/Linh-Tran-0312/storykit/aab7cca104a562c970a312ed5c7082eed27cfd5e
 
 devDependencies:
   '@eslint/js':
@@ -1757,10 +1754,6 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /style-inject@0.3.0:
-    resolution: {integrity: sha512-IezA2qp+vcdlhJaVm5SOdPPTUu0FCEqfNSli2vRuSIBbu5Nq5UvygTk/VzeCqfLz2Atj3dVII5QBKGZRZ0edzw==}
-    dev: false
-
   /styled-components@6.1.13(react-dom@18.3.1)(react@18.3.1):
     resolution: {integrity: sha512-M0+N2xSnAtwcVAQeFEsGWFFxXDftHUD7XrKla06QbpUMmbmtFBMMTcKWvFXtWxuD5qQkB8iU5gk6QASlx2ZRMw==}
     engines: {node: '>= 16'}
@@ -1936,13 +1929,12 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  github.com/Linh-Tran-0312/storykit/34f0f364bb83930b454f1f71c23296e2181377ae:
-    resolution: {tarball: https://codeload.github.com/Linh-Tran-0312/storykit/tar.gz/34f0f364bb83930b454f1f71c23296e2181377ae}
+  github.com/Linh-Tran-0312/storykit/aab7cca104a562c970a312ed5c7082eed27cfd5e:
+    resolution: {tarball: https://codeload.github.com/Linh-Tran-0312/storykit/tar.gz/aab7cca104a562c970a312ed5c7082eed27cfd5e}
     name: storykit
     version: 1.0.0
     dependencies:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-      style-inject: 0.3.0
       styled-components: 6.1.13(react-dom@18.3.1)(react@18.3.1)
     dev: false
