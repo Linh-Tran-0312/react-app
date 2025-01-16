@@ -9,6 +9,7 @@ export default defineConfig({
   plugins: [react(), 
     tsConfigPaths({configNames: ['tsconfig.app.json']}),
     dynamicPrefetch()],
+  base: "/react-app",
   resolve: {
     alias:[
       { find: 'pages', replacement: path.resolve(__dirname,'src/pages/' )},
