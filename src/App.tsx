@@ -1,37 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import { Button } from 'storykit';
-import './App.css'
+import { Routes, Route } from "react-router-dom";
+import LayoutComponent from "components/layout/Layout";
+import { lazyComponent } from "utils/lazyLoad";
+import "./App.css";
+import "antd-css-utilities/utility.min.css";
+ 
+const Home = lazyComponent(
+  () => import(/* vitePrefetch: true */ "pages/Home")
+);
+const Blog = lazyComponent(
+  () => import(/* vitePrefetch: true */ "./pages/Blog")
+);
+ 
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-      <Button variant="primary">This button is immported from Storykit</Button>
-    </>
-  )
+    <LayoutComponent>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/blog" element={<Blog />} />
+        </Routes>
+    </LayoutComponent>
+  );
 }
 
-export default App
+export default App;
