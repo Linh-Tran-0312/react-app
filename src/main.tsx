@@ -8,7 +8,7 @@ import {
 
 const router = createBrowserRouter([
   { path: "*", element: <App /> },
-],{ basename: '/public'});
+]);
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
