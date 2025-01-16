@@ -6,25 +6,37 @@
   "scripts": {
     "dev": "vite --port 3000",
     "build": "tsc -b && vite build",
-    "lint": "eslint .",
+    "lint": "eslint src",
+    "lint:fix": "eslint --fix src",
     "preview": "vite preview"
   },
   "dependencies": {
+    "antd": "^5.22.5",
+    "antd-css-utilities": "^2.1.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "storykit": "github:Linh-Tran-0312/storykit#aab7cca104a562c970a312ed5c7082eed27cfd5e"
+    "react-router-dom": "^7.0.2",
+    "storykit": "github:Linh-Tran-0312/storykit#4f3652e6e698e04531a463f40bafbb034fa1806f"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",
+    "@types/node": "^22.10.2",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",
+    "esbuild": "^0.24.0",
     "eslint": "^9.9.0",
-    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
-    "eslint-plugin-react-refresh": "^0.4.9",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react-hooks": "5.1.0-rc-fb9a90fa48-20240614",
+    "eslint-plugin-react-refresh": "^0.4.12",
     "globals": "^15.9.0",
+    "magic-string": "^0.30.17",
+    "path": "^0.12.7",
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.0.1",
-    "vite": "^5.4.1"
+    "vite": "^4.0.0",
+    "vite-plugin-dynamic-prefetch": "^0.1.4",
+    "vite-tsconfig-paths": "^5.1.4"
   }
 }
